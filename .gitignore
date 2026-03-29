@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*Notes.bib
+.DS_Store
+.env
+*.secret
