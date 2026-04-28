@@ -295,16 +295,29 @@ Speed & Energy & Mass equivalent \\
 $c$ (light speed)  & $\sim 10^{28}$\,kg  & 3 Jupiter masses \\
 $0.01\,c$          & $\sim 10^{20}$\,kg  & large asteroid \\
 $100$\,m/s         & $\sim 67$\,kg        & one human \\
-$1$\,m/s           & $\sim 60$\,MJ        & 1.5 liters of gasoline \\
+$1$\,m/s           & ${\sim}94$\,GJ ($\approx 26$\,MWh) & ${\sim}2.4$ years of US household power\footnotemark[1] \\
 \bottomrule
 \end{tabular}
 \caption{Price list for a warp bubble of radius $R = 10$\,m and wall
-thickness $\delta = 1$\,m. The $v^4$ scaling makes subluminal warp
-extraordinarily cheap---in principle.}
+thickness $\delta = 1$\,m, computed for the linear shape function
+($\int h'^2 r^2\,dr = R^2/(2\delta) + \delta/6$). The $v^4$ scaling makes
+subluminal warp dramatic---each factor-of-10 in speed costs four orders
+of magnitude in energy.}
 \label{tab:warp}
 \end{table}
 
-The price of a walking-speed warp bubble is 1.5~liters of gasoline.
+\footnotetext[1]{The arXiv-v1 of this essay quoted ``${\sim}60$\,MJ
+$\approx$ 1.5 liters of gasoline'' for the $v=1$\,m/s row, which was a
+typographical error: the correct value
+$E = (c^4/8G)(v/c)^4 R^2/(2\delta) \approx 9.4\times10^{10}$\,J is
+${\sim}1561\times$ larger. We thank a careful reader for the catch. See
+\texttt{supplement\_warp\_numerics.md} for the full reproducible
+calculation against \texttt{warp\_bubble\_simulation.py}.}
+
+The price of a walking-speed warp bubble for a 10-metre vehicle is
+about 26 megawatt-hours---comparable to two-and-a-half years of an
+average US household's electricity consumption, or roughly 22 tons of
+TNT. Not gasoline-cheap, but vastly less than astrophysical scales.
 The catch: in the lapse formulation, it must be \emph{negative}
 energy, shaped into a specific $\Sigma$ profile. Nobody knows how
 to do this.
